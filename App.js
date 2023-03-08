@@ -12,7 +12,7 @@ function Feed() {
   );
 }
 
-function Profile() {
+function Perfil() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <Text>Seu Perfil!</Text>
@@ -20,10 +20,10 @@ function Profile() {
   );
 }
 
-function Notifications() {
+function Notificacao() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Suas Notificaç!</Text>
+      <Text>Sua Notificação!</Text>
     </View>
   );
 }
@@ -49,20 +49,20 @@ function MyTabs() {
         }}
       />
       <Tab.Screen
-        name="Notifications"
-        component={Notifications}
+        name="Notificacao"
+        component={Notificacao}
         options={{
-          tabBarLabel: 'Updates',
+          tabBarLabel: 'Notificação',
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="bell" color={color} size={26} />
           ),
         }}
       />
       <Tab.Screen
-        name="Profile"
-        component={Profile}
+        name="Perfil"
+        component={Perfil}
         options={{
-          tabBarLabel: 'Profile',
+          tabBarLabel: 'Perfil',
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="account" color={color} size={26} />
           ),
