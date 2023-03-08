@@ -64,7 +64,7 @@ function MyTabs() {
         options={{
           tabBarLabel: 'Perfil',
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="account" color={color} size={26} />
+            <MaterialCommunityIcons name="flower" color={color} size={26} /> //account
           ),
         }}
       />
