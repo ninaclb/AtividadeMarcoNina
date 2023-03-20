@@ -6,6 +6,7 @@ import SplashScreen from "./screens/SplashScreen";
 import HomeScreen from "./screens/HomeScreen";
 import AboutScreen from "./screens/AboutScreen";
 import LoginScreen from "./screens/LoginScreen";
+import RegisterScreen from "./screens/RegisterScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -74,6 +75,14 @@ function TabsNavigation() {
         tabBarLabel: 'Login',
         tabBarIcon: ({ color }) => (
           <MaterialCommunityIcons name="cat" color={color} size={26} />
+        ),
+      }}/>
+      <Tabes.Screen name="RegisterScreen"
+       component={RegisterScreen}
+       options={{
+        tabBarLabel: 'Login',
+        tabBarIcon: ({ color }) => (
+          <MaterialCommunityIcons name="dog" color={color} size={26} />
         ),
       }}/>
     </Tabes.Navigator>

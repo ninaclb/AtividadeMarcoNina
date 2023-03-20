@@ -10,6 +10,7 @@ export default function LoginScreen() {
           source={{ uri: "https://picsum.photos/200/3000" }}
           style={{ width: 200, height: 200 }}
         />
+        <Text></Text>
         <TextInput label="Email" placeholder="Digite seu email" />
         <TextInput
           label="Senha"
