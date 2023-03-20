@@ -14,8 +14,9 @@ export const styles = StyleSheet.create({
     backgroundColor: "#fff",
     shadowColor: "#000",
     shadowOffset: {
-      widht: 0,
-      height: 12,
+      widht: 10,
+      height: 10,
     },
   },
+
 });
