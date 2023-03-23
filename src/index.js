@@ -53,38 +53,46 @@ function TabsNavigation() {
       labelStyle={{ fontSize: 12 }}
       style={{ backgroundColor: "tomato" }}
     >
-      <Tabes.Screen name="HomeScreen"
-      component={HomeScreen} 
-      options={{
-        tabBarLabel: 'Home',
+      <Tabes.Screen
+        name="HomeScreen"
+        component={HomeScreen}
+        options={{
+          tabBarLabel: "Home",
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="home" color={color} size={26} />
           ),
-      }}/>
-      <Tabes.Screen name="AboutScreen"
-       component={AboutScreen}
-       options={{
-        tabBarLabel: 'About',
-        tabBarIcon: ({ color }) => (
-          <MaterialCommunityIcons name="plus" color={color} size={26} />
-        ),
-      }}/>
-      <Tabes.Screen name="LoginScreen"
-       component={LoginScreen}
-       options={{
-        tabBarLabel: 'Login',
-        tabBarIcon: ({ color }) => (
-          <MaterialCommunityIcons name="cat" color={color} size={26} />
-        ),
-      }}/>
-      <Tabes.Screen name="RegisterScreen"
-       component={RegisterScreen}
-       options={{
-        tabBarLabel: 'Login',
-        tabBarIcon: ({ color }) => (
-          <MaterialCommunityIcons name="dog" color={color} size={26} />
-        ),
-      }}/>
+        }}
+      />
+      <Tabes.Screen
+        name="AboutScreen"
+        component={AboutScreen}
+        options={{
+          tabBarLabel: "About",
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="plus" color={color} size={26} />
+          ),
+        }}
+      />
+      <Tabes.Screen
+        name="LoginScreen"
+        component={LoginScreen}
+        options={{
+          tabBarLabel: "Login",
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="login" color={color} size={26} />
+          ),
+        }}
+      />
+      <Tabes.Screen
+        name="RegisterScreen"
+        component={RegisterScreen}
+        options={{
+          tabBarLabel: "Cadastro",
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="dog" color={color} size={26} />
+          ),
+        }}
+      />
     </Tabes.Navigator>
   );
 }
