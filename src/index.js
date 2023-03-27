@@ -7,6 +7,7 @@ import HomeScreen from "./screens/HomeScreen";
 import AboutScreen from "./screens/AboutScreen";
 import LoginScreen from "./screens/LoginScreen";
 import RegisterScreen from "./screens/RegisterScreen";
+import FetchNews from "./screens/FetchNews";
 
 const Stack = createNativeStackNavigator();
 
@@ -90,6 +91,16 @@ function TabsNavigation() {
           tabBarLabel: "Cadastro",
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="dog" color={color} size={26} />
+          ),
+        }}
+      />
+      <Tabes.Screen
+        name="FetchNews"
+        component={FetchNews}
+        options={{
+          tabBarLabel: "FetchNews",
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="cat" color={color} size={26} />
           ),
         }}
       />

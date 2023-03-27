@@ -10,7 +10,7 @@ export default function RegisterScreen({ navigation }) {
   const [senha, setSenha] = useState("");
 
   //função  lidar com o registro do usuário
-  function handleRegister() {
+  function handleLogin() {
     createUserWithEmailAndPassword(auth, email, senha)
       .then((userCredential) => {
         console.log("Usuário cadastrado com sucesso!");
@@ -67,7 +67,7 @@ export default function RegisterScreen({ navigation }) {
             borderColor: "black",
           }}
         />
-        <Button onPress={handleRegister}>Registre-se</Button>
+        <Button onPress={handleLogin}>Registre-se</Button>
       </View>
     </View>
   );
