@@ -8,6 +8,7 @@ import AboutScreen from "./screens/AboutScreen";
 import LoginScreen from "./screens/LoginScreen";
 import RegisterScreen from "./screens/RegisterScreen";
 import FetchNews from "./screens/FetchNews";
+import RickMorty from "./screens/RickMorty";
 
 const Stack = createNativeStackNavigator();
 
@@ -101,6 +102,16 @@ function TabsNavigation() {
           tabBarLabel: "FetchNews",
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="cat" color={color} size={26} />
+          ),
+        }}
+      />
+      <Tabes.Screen
+        name="RickMorty"
+        component={RickMorty}
+        options={{
+          tabBarLabel: "RickMorty",
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="flower" color={color} size={26} />
           ),
         }}
       />

@@ -18,5 +18,21 @@ export const styles = StyleSheet.create({
       height: 10,
     },
   },
+  card: {
+    margin: 40,
+    maxWidth: 300,
+    widht: "100%",
+    borderRadius: 20,
+    backgroundColor: "#fff",
+    padding: 20,
+    backgroundColor: "#fff",
+    shadowColor: "#000",
+    shadowOffset: {
+      widht: 50,
+      height: 50,
+    },
+
+
+  },
 
 });

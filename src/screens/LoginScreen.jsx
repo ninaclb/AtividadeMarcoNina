@@ -46,7 +46,7 @@ export default function LoginScreen({ navigation }) {
       <View style={styles.box}>
         <Image
           source={{ uri: "https://picsum.photos/200/3000" }}
-          style={{ width: 200, height: 200 }}
+          style={{ width: 200, height: 200, borderRadius: 20}}
         />
         <Text></Text>
         <TextInput
