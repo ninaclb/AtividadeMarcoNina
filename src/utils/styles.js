@@ -1,9 +1,20 @@
-import { StyleSheet } from "react-native";
+import { Dimensions, StyleSheet } from "react-native";
+
+const width = Dimensions.get("window").width;
+
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "#fff",
+  },
+
+  containerFullWidth: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    width: width,
   },
   box: {
     maxWidth: 300,
@@ -31,8 +42,5 @@ export const styles = StyleSheet.create({
       widht: 50,
       height: 50,
     },
-
-
   },
-
 });
